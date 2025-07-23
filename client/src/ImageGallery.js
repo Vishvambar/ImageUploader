@@ -21,8 +21,6 @@ const ImageGallery = () => {
 
   useEffect(() => {
     fetchImages();
-    const disableContextMenu = (e) => e.preventDefault();
-
 
     // Listen for new image uploads
     const handleImageUploaded = () => {

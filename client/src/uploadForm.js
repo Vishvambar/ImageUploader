@@ -56,7 +56,7 @@ const UploadForm = () => {
     formData.append('image', image);
 
     try {
-      const res = await axios.post('/api/upload', formData);
+      await axios.post('/api/upload', formData);
       alert('Upload successful!');
       
       // Reset form
